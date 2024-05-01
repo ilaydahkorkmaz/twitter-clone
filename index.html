@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    
+    <!-- Font Awesome ikonları için bağlantı -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Kendi CSS dosyanız -->
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- Google Font bağlantısı -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- sidebar başlangıç -->
+    <div class="sidebar">
+        <i class="fab fa-twitter"></i>
+        
+        <div class="sidebarOption active-ilayda">
+            <span class="material-icons">
+                home
+            </span>
+            <h2>Home</h2>
+        </div>
+
+        <div class="sidebarOption active">
+            <span class="material-icons">
+                search
+            </span>
+            <h2>Explore</h2>
+        </div>
+
+        <div class="sidebarOption active">
+            <span class="material-icons">
+                notifications_none
+            </span>
+            <h2>Notifications</h2>
+        </div>
+
+        <div class="sidebarOption active">
+            <span class="material-icons">
+                mail_outline
+            </span>
+            <h2>Messages</h2>
+        </div>
+
+        <div class="sidebarOption active">
+            <span class="material-icons">
+                bookmark_border
+            </span>
+            <h2>Bookmarks</h2>
+        </div>
+
+        <div class="sidebarOption active">
+            <span class="material-icons">
+                list_alt
+            </span>
+            <h2>Lists</h2>
+        </div>
+
+        <div class="sidebarOption active">
+            <span class="material-icons">
+                person
+            </span>
+            <h2>Profile</h2>
+        </div>
+
+        <div class="sidebarOption active">
+            <span class="material-icons">
+                more_horiz
+            </span>
+            <h2>More</h2>
+        </div>
+
+        <button class="sidebar__tweet">Tweet</button>
+    </div>
+    <!-- sidebar bitiş -->
+
+    <!-- feed ve tweetBox başlangıç -->
+    <div class="main-content">
+        <!-- feed başlangıç -->
+        <div class="feed">
+            <div class="feed__head">
+                <h2>Home</h2>
+            </div>
+            <!-- Buraya feed içeriği gelecek -->
+        </div>
+        <!-- feed bitiş -->
+
+        <!-- tweetbox başlangıç -->
+        <div class="tweetBox">
+            
+            
+                <form id="tweetForm"> <!-- Form eklendi -->
+                    <div class="tweetbox__input">
+                        <img src="img/pp.jpg" alt=""/>
+                        <input id="tweetInput" type="text" placeholder="What's happening?!"/> <!-- Input'a id eklendi -->
+                    </div>
+                    <button type="submit" class="tweetBox__tweetButton">Tweet</button> <!-- Button'a type ve class eklendi -->
+                </form>
+            
+        </div>
+
+        <div class="post">
+            
+            <div class="post__avatar">
+                <img src="img/pp.jpg" alt="">
+            </div>
+            <div class="post__body">
+                <div class="post__header">
+                    <div class="post__headerText">
+                        <h3>İlayda Korkmaz
+                            <span class="post__headerSpecial">
+                                <span class="material-icons post_badge" style="color:lightskyblue;">
+                                    verified
+                                    </span> @ilaydahkorkmaz
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="post__headerDecription">
+                       Eminönü, İstanbul
+                    </div>
+                </div>
+
+                <img src="img/pexels-photo-3999943.jpeg" alt=""
+                />
+                <div class="post__footer">
+                    <span class="material-icons">favorite_border</span>
+                    <span class="material-icons">repeat</span>
+                    <span class="material-icons">publish</span>
+                </div>
+            </div>
+        </div>
+        <!-- tweetbox bitiş -->
+
+
+
+        <!-- post starts -->
+
+        <div class="post">
+            <div class="post__avatar">
+                <img src="img/pp.jpg" alt="">
+            </div>
+            <div class="post__body">
+                <div class="post__header">
+                    <div class="post__headerText">
+                        <h3>İlayda Korkmaz
+                            <span class="post__headerSpecial">
+                                <span class="material-icons post_badge" style="color:lightskyblue;">
+                                    verified
+                                    </span> @ilaydahkorkmaz
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="post__headerDecription">
+                        Sirkeci Gar. 
+                    </div>
+                </div>
+
+                <img src="img/pexels-necip-duman-3299706-12719167.jpg" alt=""
+                />
+                <div class="post__footer">
+                    <span class="material-icons">favorite_border</span>
+                    <span class="material-icons">repeat</span>
+                    <span class="material-icons">publish</span>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+        
+
+         <!-- post bitiş  -->
+           
+         <!-- widgets başlangıç  -->
+         
+
+         <!-- widgets bitiş  -->
+        
+    </div>
+
+    <div class="widgets">
+        <div class="widgets__input">
+            <span class="material-icons widgets__searchIcon"> search </span>
+           <input type="text" placeholder="Search Twitter">
+        </div>
+
+        <div class="widgets__widgetContainer">
+            <h2>What's happening?</h2>
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">At dawn from the gateway to Mars, the launch of Starship’s second flight test <a href="https://t.co/ffKnsVKwG4">pic.twitter.com/ffKnsVKwG4</a></p>&mdash; SpaceX (@SpaceX) <a href="https://twitter.com/SpaceX/status/1732824684683784516?ref_src=twsrc%5Etfw">December 7, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+       </div>
+    <!-- feed ve tweetBox bitiş -->
+
+    <script src="app.js"></script>
+</body>
+</html>
